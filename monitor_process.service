@@ -1,0 +1,11 @@
+[Unit]
+Description=Monitor Test Process
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/bin/bash /usr/local/bin/monitor_process.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
